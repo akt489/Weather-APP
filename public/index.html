@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="A modern weather application providing real-time weather information with light and dark mode support." />
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="image/icon.png">
+  <title>Weather App - Real-time Weather Forecasts</title>
+</head>
+
+<body>
+  <main>
+    <button class="themeToggle" aria-label="Toggle dark mode">
+      <svg class="sunIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="moonIcon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+    <div class="glassBox">
+      <div class="topSection">
+        <h1 class="title">🌤️ Weather</h1>
+        <div class="searchArea">
+          <input type="text" placeholder="Enter your city" autocomplete="off" dir="auto">
+          <button class="searchButton" type="button">
+            <span>Search</span>
+          </button>
+        </div>
+      </div>
+      <div class="weatherteller">
+        <div class="imageArea" role="img" aria-label="Weather icon">
+        </div>
+        <div class="textArea">
+          <h2 class="city"></h2>
+          <h3 class="degree"></h3>
+          <h3 class="disc"></h3>
+        </div>
+      </div>
+      <div class="loadArea"></div>
+    </div>
+  </main>
+</body>
+<script src="index.js" type="module"></script>
+
+</html>
